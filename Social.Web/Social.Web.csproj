@@ -23,4 +23,8 @@
       <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\swagger-ui\custom.css" />
+    </ItemGroup>
+
 </Project>

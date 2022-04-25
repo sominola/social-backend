@@ -12,12 +12,11 @@ public static class MiddlewareExtension
                 .AllowAnyMethod()
                 .AllowAnyHeader();
         });
+        
         app.UseSwagger(c =>
         {
             c.SerializeAsV2 = true;
         });
-
-        app.UseStaticFiles();
         
         if (app.Environment.IsDevelopment())
         {
@@ -25,7 +24,6 @@ public static class MiddlewareExtension
             app.UseSwaggerUI(options =>
             {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
-                options.InjectStylesheet("/swagger-ui/custom.css");
                 options.RoutePrefix = string.Empty;
             });
             app.UseDeveloperExceptionPage();
