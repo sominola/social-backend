@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Social.Web", "Social.Web\Social.Web.csproj", "{E6549E6F-7B95-4F24-94AD-E6949146EA3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Social.Data", "Social.Data\Social.Data.csproj", "{854109AD-FD31-41D4-A7D0-929595B391A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Social.Domain", "Social.Domain\Social.Domain.csproj", "{AB49E52B-AC2C-45E0-AFA4-63DCFAD2F0EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6549E6F-7B95-4F24-94AD-E6949146EA3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6549E6F-7B95-4F24-94AD-E6949146EA3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6549E6F-7B95-4F24-94AD-E6949146EA3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6549E6F-7B95-4F24-94AD-E6949146EA3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{854109AD-FD31-41D4-A7D0-929595B391A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{854109AD-FD31-41D4-A7D0-929595B391A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{854109AD-FD31-41D4-A7D0-929595B391A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{854109AD-FD31-41D4-A7D0-929595B391A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB49E52B-AC2C-45E0-AFA4-63DCFAD2F0EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB49E52B-AC2C-45E0-AFA4-63DCFAD2F0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB49E52B-AC2C-45E0-AFA4-63DCFAD2F0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB49E52B-AC2C-45E0-AFA4-63DCFAD2F0EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
