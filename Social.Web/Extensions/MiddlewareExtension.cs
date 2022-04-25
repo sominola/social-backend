@@ -1,4 +1,6 @@
-﻿using Social.Web.Middlewares;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Hosting;
+using Social.Web.Middlewares;
 
 namespace Social.Web.Extensions;
 
@@ -17,7 +19,6 @@ public static class MiddlewareExtension
         {
             c.SerializeAsV2 = true;
         });
-        
         if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
@@ -26,11 +27,9 @@ public static class MiddlewareExtension
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
                 options.RoutePrefix = string.Empty;
             });
-            app.UseDeveloperExceptionPage();
         }
 
         app.UseHttpsRedirection();
-
         app.UseExceptionHandler();
      
         app.UseRouting();
