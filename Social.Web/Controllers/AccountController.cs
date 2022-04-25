@@ -22,7 +22,7 @@ public class AccountController: ControllerBase
     /// </summary>
     /// <remarks>Description</remarks>
     /// <returns>JWT</returns>
-    /// <response code="200">Login success</response>
+    /// <response code="200">Success</response>
     /// <response code="403">Error, password doesn't fit</response>
     /// <response code="404">Error, can not find account</response>
     [HttpPost("signin")]
@@ -36,7 +36,7 @@ public class AccountController: ControllerBase
     /// </summary>
     /// <remarks>Description</remarks>
     /// <returns>Account credentials</returns>
-    /// <response code="200">Login success</response>
+    /// <response code="200">Success</response>
     /// <response code="409">Error, account already exists</response>
     /// <response code="500">Error, cannot create account.</response>
     [HttpPost("signup")]
