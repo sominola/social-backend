@@ -8,12 +8,8 @@ public static class MiddlewareExtension
 {
     public static void AddMiddlewares(this WebApplication app)
     {
-        app.UseCors(policy =>
-        {
-            policy.AllowAnyOrigin()
-                .AllowAnyMethod()
-                .AllowAnyHeader();
-        });
+        app.UseCors("SpecificOrigins");
+       
         
         app.UseSwagger(c =>
         {

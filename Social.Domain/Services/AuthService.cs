@@ -26,7 +26,7 @@ public class AuthService : IAuthService
         var result = await VerifyUserCredentials(model);
         var claims = GenerateClaims(result);
         var token = _tokenService.GenerateJwt(claims);
-        return new TokenDto {AccessToken = token};
+        return new TokenDto {AccessToken = token, RefreshToken = "TEST"};
     }
 
     private IEnumerable<Claim> GenerateClaims(User user)

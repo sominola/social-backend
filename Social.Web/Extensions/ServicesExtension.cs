@@ -88,7 +88,16 @@ public static class ServicesExtension
             options.LowercaseUrls = true;
             options.LowercaseQueryStrings = true;
         });
-        Services.AddCors();
+        Services.AddCors(options =>
+        {
+            options.AddPolicy(name: "SpecificOrigins",
+                policy =>
+                {
+                    policy.AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+        });
     }
 
     private static void AddDbContext(this IServiceCollection services)
